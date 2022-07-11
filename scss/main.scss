@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+body {
+
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.6rem;
+background-color: aqua;
+}
+
+// NAV
+.button {
+    position: fixed;
+    padding: 1em;
+	top: 20px;
+	right: 20px;
+	background-color: grey;
+    border: 1px solid black;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.nav {
+	&__line {
+		display: none;
+	}
+}
