@@ -41,6 +41,12 @@ body {
   font-size: 1.6rem;
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -98,6 +104,9 @@ body {
   display: none;
   position: fixed;
   top: 105px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   width: 100%;
   z-index: 5;
   border-top: 2px solid black;
@@ -143,6 +152,8 @@ body {
   height: 200px;
   background-color: white;
   z-index: 5;
+  -webkit-transition: left 0.3s linear;
+  transition: left 0.3s linear;
 }
 
 .nav-mobile__items {
@@ -168,6 +179,9 @@ body {
   top: 0;
   width: 100%;
   height: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   line-height: 100px;
   color: white;
   background-color: black;
@@ -183,8 +197,8 @@ body {
   position: absolute;
   left: 20px;
   font-size: 7rem;
-  -webkit-animation: moveApple 20s infinite linear;
-          animation: moveApple 20s infinite linear;
+  -webkit-animation: moveApple 120s infinite linear;
+          animation: moveApple 120s infinite linear;
 }
 
 .header__hero-title {
@@ -367,13 +381,60 @@ body {
     font-size: 4rem;
   }
   .welcome {
-    padding: 24rem 4rem 16rem;
+    padding: 28rem 4rem 14rem;
   }
   .news h2 {
     font-size: 4rem;
   }
   .news .underline {
     height: 4px;
+  }
+}
+
+.apps {
+  position: relative;
+  padding: 18rem 0;
+  text-align: center;
+}
+
+.apps h1 {
+  margin-bottom: 4rem;
+}
+
+.apps__card {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  left: 50%;
+  padding: 1rem;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: 1px solid black;
+}
+
+.apps__card--img {
+  position: absolute;
+  width: 90%;
+  height: 180px;
+  background-image: url("../img/AMB_120a.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.apps__card--text {
+  position: absolute;
+  bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
   }
 }
 /*# sourceMappingURL=main.css.map */

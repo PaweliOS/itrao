@@ -19,6 +19,12 @@ body {
 	font-size: 1.6rem;
 }
 
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
 // NAV
 .burger-btn {
 	position: fixed;
@@ -80,6 +86,8 @@ body {
 	display: none;
 	position: fixed;
 	top: 105px;
+	left: 50%;
+	transform: translate(-50%);
 	width: 100%;
 	z-index: 5;
 	border-top: 2px solid black;
@@ -115,12 +123,13 @@ body {
 .nav-mobile {
 	position: fixed;
 	left: -105%;
-	 top: 100px;
+	top: 100px;
 	// top: 130;
 	width: 100%;
 	height: 200px;
 	background-color: white;
 	z-index: 5;
+	transition: left 0.3s linear;
 
 	&__items {
 		display: flex;
@@ -139,6 +148,8 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100px;
+	left: 50%;
+	transform: translate(-50%);
 	line-height: 100px;
 
 	color: white;
@@ -153,7 +164,7 @@ body {
 			position: absolute;
 			left: 20px;
 			font-size: 7rem;
-			animation: moveApple 20s infinite linear;
+			animation: moveApple 120s infinite linear;
 		}
 	}
 	&__hero-title {
@@ -167,8 +178,6 @@ body {
 		}
 	}
 }
-
-
 
 .welcome {
 	position: relative;
@@ -349,7 +358,7 @@ body {
 	}
 
 	.welcome {
-		padding: 24rem 4rem 16rem;
+		padding: 28rem 4rem 14rem;
 	}
 
 	.news {
@@ -360,5 +369,50 @@ body {
 		.underline {
 			height: 4px;
 		}
+	}
+}
+
+// ================
+// APPS
+// ================
+.apps {
+	position: relative;
+	padding: 18rem 0;
+	text-align: center;
+
+	h1 {
+		margin-bottom: 4rem;
+	}
+
+	&__card {
+		position: relative;
+		width: 200px;
+		height: 400px;
+		left: 50%;
+		padding: 1rem;
+		transform: translate(-50%);
+		border: 1px solid black;
+		&--img {
+			position: absolute;
+			width: 90%;
+			height: 180px;
+			background-image: url('../img/AMB_120a.png');
+			background-position: center;
+			background-size: cover;
+		}
+		&--text {
+			position: absolute;
+			// color: red;
+			bottom: 10px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.footer {
+		width: 1200px;
+		align-items: center;
+		left: 50%;
+		transform: translate(-50%);
 	}
 }
