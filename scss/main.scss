@@ -229,7 +229,7 @@ body {
 .news {
 	position: relative;
 	width: 100%;
-	// height: 400px;
+	//  height: 100vh;
 	background-color: rgb(231, 231, 231);
 	padding: 1rem 4rem 4rem;
 
@@ -313,12 +313,125 @@ body {
 	}
 }
 
+// ================
+// APPS
+// ================
+.apps {
+	display: flex;
+	flex-direction: column;
+	// position: relative;
+	padding: 18rem 0 2rem;
+	// text-align: center;
+	align-items: center;
+	overflow: hidden;
+	// height: 95vh;
+
+	&__card {
+		position: relative;
+		// margin-top: 6rem;
+		box-shadow: 0 3px 8px gray;
+		padding: 1rem;
+	}
+
+	h1 {
+		margin-bottom: 4rem;
+	}
+
+	&__cards {
+		display: flex;
+		position: relative;
+		flex-wrap: wrap;
+		justify-content:space-between;
+
+		&--page-one {
+			display: flex;
+			flex-direction: column;
+			// position: relative;
+			top: 0;
+			left: 0;
+			width: 200px;
+			height: 300px;
+			background-color: white;
+			// background-color: rgb(202, 200, 200);
+			// box-shadow: 0 3px 8px gray;
+			// padding: 1rem;
+			// border: 1px solid gray;
+			transition: 0.8s;
+		}
+		
+		&--page-two {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			transition: opacity 0.8s;
+			// color: red;
+
+		}
+
+		&--img {
+			// position: relative;
+			// left: 0;
+			// right: 0;
+			// width: 100%;
+			height: 70%;
+			// margin-bottom: 2rem;
+
+			background-image: url('../img/AMB_120a.png');
+			background-position: center;
+			background-size: cover;
+		}
+		&--title {
+			margin-top: 5rem;
+			text-align: center;
+			h2 {
+				// color: green
+			}
+		}
+
+	}
+	&__card-one:hover &__cards--page-one {
+		transform: translateY(300px);
+	}
+	&__card-one:hover &__cards--page-two {
+		opacity: 1;	
+	}
+
+	&__card-two:hover &__cards--page-one {
+		transform: translateY(300px);
+	}
+	&__card-two:hover &__cards--page-two {
+		opacity: 1;	
+	}
+
+	&__card-three:hover &__cards--page-one {
+		transform: translateY(300px);
+	}
+	&__card-three:hover &__cards--page-two {
+		opacity: 1;	
+	}
+
+	&__card-four:hover &__cards--page-one {
+		transform: translateY(300px);
+	}
+	&__card-four:hover &__cards--page-two {
+		opacity: 1;	
+	}
+	&__card-five:hover &__cards--page-one {
+		transform: translateY(300px);
+	}
+	&__card-five:hover &__cards--page-two {
+		opacity: 1;	
+	}
+
+}
+
 .footer {
 	position: relative;
 	background-color: white;
 	padding: 1rem;
 	text-align: center;
 	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 // ========================
@@ -368,42 +481,6 @@ body {
 
 		.underline {
 			height: 4px;
-		}
-	}
-}
-
-// ================
-// APPS
-// ================
-.apps {
-	position: relative;
-	padding: 18rem 0;
-	text-align: center;
-
-	h1 {
-		margin-bottom: 4rem;
-	}
-
-	&__card {
-		position: relative;
-		width: 200px;
-		height: 400px;
-		left: 50%;
-		padding: 1rem;
-		transform: translate(-50%);
-		border: 1px solid black;
-		&--img {
-			position: absolute;
-			width: 90%;
-			height: 180px;
-			background-image: url('../img/AMB_120a.png');
-			background-position: center;
-			background-size: cover;
-		}
-		&--text {
-			position: absolute;
-			// color: red;
-			bottom: 10px;
 		}
 	}
 }
