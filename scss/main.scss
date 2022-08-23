@@ -1,5 +1,6 @@
 @import './animations';
 
+$card_page_two_delta: 400px;
 *,
 *::before,
 *::after {
@@ -316,6 +317,16 @@ body {
 // ================
 // APPS
 // ================
+.big-letters {
+	text-transform: uppercase;
+}
+.bold-letters {
+	font-weight: bold;
+}
+.underline-letters {
+	text-decoration: underline;
+}
+
 .apps {
 	display: flex;
 	flex-direction: column;
@@ -328,9 +339,11 @@ body {
 
 	&__card {
 		position: relative;
+		// width: 240px;
+		// height: 400px;
 		// margin-top: 6rem;
-		box-shadow: 0 3px 8px gray;
 		padding: 1rem;
+		box-shadow: 0 3px 8px gray;
 	}
 
 	h1 {
@@ -341,88 +354,124 @@ body {
 		display: flex;
 		position: relative;
 		flex-wrap: wrap;
-		justify-content:space-between;
+		justify-content: space-between;
+	}
+	&__cards-img {
+		// position: relative;
+		// left: 0;
+		// right: 0;
+		// width: 100%;
+		height: 50%;
+		// margin-bottom: 2rem;
 
-		&--page-one {
-			display: flex;
-			flex-direction: column;
-			// position: relative;
-			top: 0;
-			left: 0;
-			width: 200px;
-			height: 300px;
-			background-color: white;
-			// background-color: rgb(202, 200, 200);
-			// box-shadow: 0 3px 8px gray;
-			// padding: 1rem;
-			// border: 1px solid gray;
-			transition: 0.8s;
-		}
+		background-image: url('../img/AMB_120a.png');
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__cards-title {
+		position: absolute;
+		bottom: 0;
+		padding: 1rem;
+		// height: 50%;
+		margin-top: 5rem;
+		text-align: center;
+	}
+
+	&__cards-page-one {
+		display: flex;
+		flex-direction: column;
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		width: 200px;
+		height: 400px;
+		// margin-top: 8rem;
+		background-color: white;
+		transition: transform .8s;
+	}
+
+	&__cards-page-two {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+		padding: 2rem;
+		opacity: 0;
+		transition: opacity 0.8s;
+		// color: red;
 		
-		&--page-two {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			transition: opacity 0.8s;
-			// color: red;
-
-		}
-
-		&--img {
-			// position: relative;
-			// left: 0;
-			// right: 0;
-			// width: 100%;
-			height: 70%;
-			// margin-bottom: 2rem;
-
-			background-image: url('../img/AMB_120a.png');
-			background-position: center;
-			background-size: cover;
-		}
-		&--title {
-			margin-top: 5rem;
+	}
+	
+	&__cards-text {
+		position: relative;
+		width: 200px;
+		height: 400px;
+		padding: 0 1rem;
+		// position: relative;
+		// align-items: center;
+		// font-size: 1.2rem;
+		p{
 			text-align: center;
-			h2 {
-				// color: green
-			}
+			margin-bottom: 1rem;
+			font-weight: bold;
+			font-size: 2rem;
+
 		}
-
-	}
-	&__card-one:hover &__cards--page-one {
-		transform: translateY(300px);
-	}
-	&__card-one:hover &__cards--page-two {
-		opacity: 1;	
-	}
-
-	&__card-two:hover &__cards--page-one {
-		transform: translateY(300px);
-	}
-	&__card-two:hover &__cards--page-two {
-		opacity: 1;	
+		ul{
+			list-style-type: none;
+			text-align: left;
+			margin-top: 2rem;
+			
+			li {
+				margin-bottom: 1rem;
+			}
+			// align-items: center;
+		}
 	}
 
-	&__card-three:hover &__cards--page-one {
-		transform: translateY(300px);
-	}
-	&__card-three:hover &__cards--page-two {
-		opacity: 1;	
-	}
-
-	&__card-four:hover &__cards--page-one {
-		transform: translateY(300px);
-	}
-	&__card-four:hover &__cards--page-two {
-		opacity: 1;	
-	}
-	&__card-five:hover &__cards--page-one {
-		transform: translateY(300px);
-	}
-	&__card-five:hover &__cards--page-two {
-		opacity: 1;	
+	&__cards-info {
+		// width: 100%;
+		height: 100%;
+		resize: none;
+		border: none;
+		color: black;
+		font-size: 1.4rem;
 	}
 
+	&__card-one:hover &__cards-page-one {
+		transform: translateY($card_page_two_delta);
+	}
+	&__card-one:hover &__cards-page-two {
+		opacity: 1;
+	}
+
+	&__card-two:hover &__cards-page-one {
+		transform: translateY($card_page_two_delta);
+	}
+	&__card-two:hover &__cards-page-two {
+		opacity: 1;
+	}
+
+	&__card-three:hover &__cards-page-one {
+		transform: translateY($card_page_two_delta);
+	}
+	&__card-three:hover &__cards-page-two {
+		opacity: 1;
+	}
+
+	&__card-four:hover &__cards-page-one {
+		transform: translateY($card_page_two_delta);
+	}
+	&__card-four:hover &__cards-page-two {
+		opacity: 1;
+	}
+	&__card-five:hover &__cards-page-one {
+		transform: translateY($card_page_two_delta);
+	}
+	&__card-five:hover &__cards-page-two {
+		opacity: 1;
+	}
 }
 
 .footer {

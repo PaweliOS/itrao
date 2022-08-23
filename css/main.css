@@ -349,6 +349,18 @@ body {
   aspect-ratio: calc(1);
 }
 
+.big-letters {
+  text-transform: uppercase;
+}
+
+.bold-letters {
+  font-weight: bold;
+}
+
+.underline-letters {
+  text-decoration: underline;
+}
+
 .apps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,9 +378,9 @@ body {
 
 .apps__card {
   position: relative;
+  padding: 1rem;
   -webkit-box-shadow: 0 3px 8px gray;
           box-shadow: 0 3px 8px gray;
-  padding: 1rem;
 }
 
 .apps h1 {
@@ -387,7 +399,22 @@ body {
           justify-content: space-between;
 }
 
-.apps__cards--page-one {
+.apps__cards-img {
+  height: 50%;
+  background-image: url("../img/AMB_120a.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.apps__cards-title {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.apps__cards-page-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,77 +422,101 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 0;
-  left: 0;
   width: 200px;
-  height: 300px;
+  height: 400px;
   background-color: white;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
 }
 
-.apps__cards--page-two {
+.apps__cards-page-two {
   position: absolute;
   top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  padding: 2rem;
   opacity: 0;
   -webkit-transition: opacity 0.8s;
   transition: opacity 0.8s;
 }
 
-.apps__cards--img {
-  height: 70%;
-  background-image: url("../img/AMB_120a.png");
-  background-position: center;
-  background-size: cover;
+.apps__cards-text {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  padding: 0 1rem;
 }
 
-.apps__cards--title {
-  margin-top: 5rem;
+.apps__cards-text p {
   text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-.apps__card-one:hover .apps__cards--page-one {
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
+.apps__cards-text ul {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 2rem;
 }
 
-.apps__card-one:hover .apps__cards--page-two {
+.apps__cards-text ul li {
+  margin-bottom: 1rem;
+}
+
+.apps__cards-info {
+  height: 100%;
+  resize: none;
+  border: none;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.apps__card-one:hover .apps__cards-page-one {
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
+}
+
+.apps__card-one:hover .apps__cards-page-two {
   opacity: 1;
 }
 
-.apps__card-two:hover .apps__cards--page-one {
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
+.apps__card-two:hover .apps__cards-page-one {
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
 }
 
-.apps__card-two:hover .apps__cards--page-two {
+.apps__card-two:hover .apps__cards-page-two {
   opacity: 1;
 }
 
-.apps__card-three:hover .apps__cards--page-one {
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
+.apps__card-three:hover .apps__cards-page-one {
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
 }
 
-.apps__card-three:hover .apps__cards--page-two {
+.apps__card-three:hover .apps__cards-page-two {
   opacity: 1;
 }
 
-.apps__card-four:hover .apps__cards--page-one {
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
+.apps__card-four:hover .apps__cards-page-one {
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
 }
 
-.apps__card-four:hover .apps__cards--page-two {
+.apps__card-four:hover .apps__cards-page-two {
   opacity: 1;
 }
 
-.apps__card-five:hover .apps__cards--page-one {
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
+.apps__card-five:hover .apps__cards-page-one {
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
 }
 
-.apps__card-five:hover .apps__cards--page-two {
+.apps__card-five:hover .apps__cards-page-two {
   opacity: 1;
 }
 
