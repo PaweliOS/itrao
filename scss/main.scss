@@ -1,6 +1,8 @@
 @import './animations';
 
 $card_page_two_delta: 400px;
+$app_color: #f7f7f7;
+
 *,
 *::before,
 *::after {
@@ -180,6 +182,9 @@ body {
 	}
 }
 
+// =======================
+// index
+// =======================
 .welcome {
 	position: relative;
 	// top: 150px;
@@ -334,20 +339,49 @@ body {
 	padding: 18rem 0 2rem;
 	// text-align: center;
 	align-items: center;
-	overflow: hidden;
 	// height: 95vh;
+
+		h1 {
+			font-size: 4rem;
+			font-weight: 200;
+		}
+
+	&__app-all {
+		padding: 5rem 1rem;
+		overflow: hidden;
+	}
+
+	&__app-one {
+		// background-color: #fcfdf8;
+	}
+	
+	&__app-two {
+		background-color: $app_color;
+	}
+
+	
+
+	&__app-four {
+		background-color: $app_color;
+	}
+
+	
 
 	&__card {
 		position: relative;
-		// width: 240px;
-		// height: 400px;
-		// margin-top: 6rem;
-		padding: 1rem;
-		box-shadow: 0 3px 8px gray;
+		padding: 2rem;
+		float: left;
+		margin-right: 5rem;
+		box-shadow: 3px 3px 10px grey;
+		background-color: white;
 	}
 
-	h1 {
-		margin-bottom: 4rem;
+
+
+	&__card-one {
+		// position: relative;
+		// float: left;
+		// margin-right: 5rem;
 	}
 
 	&__cards {
@@ -355,7 +389,13 @@ body {
 		position: relative;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		padding: 0 1rem;
 	}
+
+	// &__cards:nth-child(even) {
+	// 	background-color: red;
+	// }
+
 	&__cards-img {
 		// position: relative;
 		// left: 0;
@@ -388,7 +428,8 @@ body {
 		height: 400px;
 		// margin-top: 8rem;
 		background-color: white;
-		transition: transform .8s;
+		transition: transform 0.8s;
+		// z-index: 6;
 	}
 
 	&__cards-page-two {
@@ -399,10 +440,11 @@ body {
 		padding: 2rem;
 		opacity: 0;
 		transition: opacity 0.8s;
-		// color: red;
+		background-color: white;
+		// z-index: -1;
 		
 	}
-	
+
 	&__cards-text {
 		position: relative;
 		width: 200px;
@@ -411,18 +453,19 @@ body {
 		// position: relative;
 		// align-items: center;
 		// font-size: 1.2rem;
-		p{
+		// background: transparent;
+		p {
 			text-align: center;
 			margin-bottom: 1rem;
 			font-weight: bold;
 			font-size: 2rem;
-
 		}
-		ul{
+		ul {
+			// background: transparent;
 			list-style-type: none;
 			text-align: left;
 			margin-top: 2rem;
-			
+
 			li {
 				margin-bottom: 1rem;
 			}

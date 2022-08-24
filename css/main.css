@@ -373,18 +373,34 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.apps h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.apps__app-all {
+  padding: 5rem 1rem;
   overflow: hidden;
+}
+
+.apps__app-two {
+  background-color: #f7f7f7;
+}
+
+.apps__app-four {
+  background-color: #f7f7f7;
 }
 
 .apps__card {
   position: relative;
-  padding: 1rem;
-  -webkit-box-shadow: 0 3px 8px gray;
-          box-shadow: 0 3px 8px gray;
-}
-
-.apps h1 {
-  margin-bottom: 4rem;
+  padding: 2rem;
+  float: left;
+  margin-right: 5rem;
+  -webkit-box-shadow: 3px 3px 10px grey;
+          box-shadow: 3px 3px 10px grey;
+  background-color: white;
 }
 
 .apps__cards {
@@ -397,6 +413,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 1rem;
 }
 
 .apps__cards-img {
@@ -425,10 +442,10 @@ body {
   width: 200px;
   height: 400px;
   background-color: white;
-  -webkit-transition: -webkit-transform .8s;
-  transition: -webkit-transform .8s;
-  transition: transform .8s;
-  transition: transform .8s, -webkit-transform .8s;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
 }
 
 .apps__cards-page-two {
@@ -441,6 +458,7 @@ body {
   opacity: 0;
   -webkit-transition: opacity 0.8s;
   transition: opacity 0.8s;
+  background-color: white;
 }
 
 .apps__cards-text {
