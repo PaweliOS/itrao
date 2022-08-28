@@ -325,6 +325,14 @@ body {
   background-color: black;
 }
 
+hr {
+  margin: 2rem auto;
+}
+
+.update-title-compatibility {
+  margin: 2rem auto 0;
+}
+
 .collection {
   padding: 18rem 0 2rem;
   text-align: center;
@@ -332,15 +340,15 @@ body {
 .collection h1 {
   font-size: 4rem;
   font-weight: 200;
+  margin-bottom: 2rem;
 }
 
 .apps {
   position: relative;
-  padding: 1rem;
 }
 .apps__panel {
   position: relative;
-  height: 400px;
+  height: 540px;
   padding: 5rem 4rem;
   overflow: hidden;
 }
@@ -381,19 +389,37 @@ body {
   position: relative;
   height: 220px;
   margin-bottom: 3rem;
-  background-image: url("/img/AMB_120a.png");
   background-position: center;
   background-size: cover;
 }
+.apps__page-one-img--app-one {
+  background-image: url("/img/AMB_120a.png");
+}
+.apps__page-one-img--app-two {
+  background-image: url("/img/Ikona_ambus.png");
+}
 .apps__page-two {
   position: absolute;
+  width: 100%;
+  padding: 3rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+  text-align: left;
   z-index: 1;
 }
+.apps__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 .apps__specification-table {
+  margin-top: 1rem;
   list-style-type: none;
 }
 .apps__description-right {
   position: relative;
+  text-align: left;
   background-color: transparent;
   z-index: 0;
 }

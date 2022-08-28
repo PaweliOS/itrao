@@ -1,6 +1,6 @@
-@import './animations';
+@use './animations' as *;
 
-$apps_panel_height: 400px;
+$apps_panel_height: 540px;
 $apps_page_height: 300px;
 $app_color: #f7f7f7;
 
@@ -338,6 +338,15 @@ body {
 	background-color: black;
 }
 
+hr {
+	margin: 2rem auto;
+}
+
+.update-title-compatibility {
+	margin: 2rem auto 0;
+}
+
+
 .collection {
 	padding: 18rem 0 2rem;
 	text-align: center;
@@ -345,12 +354,13 @@ body {
 	h1 {
 		font-size: 4rem;
 		font-weight: 200;
+		margin-bottom: 2rem;
 	}
 }
 
 .apps {
 	position: relative;
-	padding: 1rem;
+	// padding: 1rem;
 
 	&__panel {
 		position: relative;
@@ -399,17 +409,35 @@ body {
 		height: 220px;
 		// padding: 2rem;
 		margin-bottom: 3rem;
-		background-image: url('/img/AMB_120a.png');
 		background-position: center;
 		background-size: cover;
+
+		&--app-one {
+			background-image: url('/img/AMB_120a.png');	
+		}
+		&--app-two {
+			background-image: url('/img/Ikona_ambus.png');	
+		}
 	}
 
 	&__page-two {
 		position: absolute;
+		width: 100%;
+		padding: 3rem;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -55%);
+		text-align: left;
 		z-index: 1;
 	}
 
+	&__title {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
 	&__specification-table {
+		margin-top: 1rem;
 		list-style-type: none;
 	}
 
@@ -424,6 +452,7 @@ body {
 
 	&__description-right {
 		position: relative;
+		text-align: left;
 		background-color: transparent;
 		z-index: 0;
 	}
