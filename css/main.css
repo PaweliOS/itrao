@@ -347,7 +347,6 @@ hr {
 }
 .apps__panel {
   position: relative;
-  height: 540px;
   padding: 5rem 4rem;
   overflow: hidden;
 }
