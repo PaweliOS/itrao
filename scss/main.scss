@@ -1,7 +1,7 @@
 @use './animations' as *;
 
 $apps_panel_height: 540px;
-$apps_page_height: 300px;
+$apps_page_height: 380px;
 $app_color: #f7f7f7;
 
 *,
@@ -250,25 +250,22 @@ body {
 		}
 	}
 
-	.underline {
+
+	
+	.underline-one {
 		position: relative;
 		width: 380px;
-		height: 2px;
-		background-color: rgb(6, 6, 6);
-		border: transparent;
-		left: 50%;
-		transform: translate(-50%);
+		height: 1px;
 		margin-bottom: 3rem;
+		background-color: black;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	&__box {
-		// display: flex;
 		position: relative;
 		width: 100%;
-		// height: 350px;
-		// justify-content: space-around;
 		background-color: rgb(231, 231, 231);
-		// box-shadow: 0 0 5px;
 	}
 	&__cards {
 		position: relative;
@@ -381,14 +378,18 @@ hr {
 
 		width: 250px;
 		height: $apps_page_height;
-		margin: 0 2rem 1rem 0;
+		margin: 0 2rem 2rem 0;
 		float: left;
-		background-color: yellow;
+		background-color: rgb(255, 255, 255);
 		z-index: 1;
+
+		&--app-five {
+			margin: 0 2rem 6rem 0;
+		}
 	}
 
 	&__description-left:hover &__page-one {
-		transform: translateY(300px);
+		transform: translateY(340px);
 	}
 
 	&__page-one {
@@ -401,6 +402,10 @@ hr {
 		box-shadow: 2px 2px 8px grey;
 		transition: transform 1s;
 		z-index: 2;
+
+		&--app-five {
+			height: 430px;
+		}
 	}
 
 	&__page-one-img {
@@ -408,7 +413,7 @@ hr {
 		// width: 220px;
 		height: 220px;
 		// padding: 2rem;
-		margin-bottom: 3rem;
+		margin-bottom: 2rem;
 		background-position: center;
 		background-size: cover;
 
@@ -417,6 +422,18 @@ hr {
 		}
 		&--app-two {
 			background-image: url('/img/Ikona_ambus.png');	
+		}
+		&--app-three {
+			background-image: url('/img/saferoad320.png');	
+		}
+		&--app-four {
+			background-image: url('/img/bryly320.png');	
+			height: 240px;
+			margin-bottom: 0;
+		}
+		&--app-five {
+			background-image: url('/img/IkonaUE_114.png');
+			margin-top: 0;
 		}
 	}
 
@@ -433,12 +450,26 @@ hr {
 
 	&__title {
 		text-align: center;
-		margin-bottom: 1rem;
+		// margin-top: 3rem auto;
+		font-weight: bold;
+		font-size: 2.5rem;
 	}
 
 	&__specification-table {
 		margin-top: 1rem;
 		list-style-type: none;
+	}
+
+	&__page-one-arrow-img {
+		display: inline-block;
+		position: relative;
+		width: 20px;
+		height: 30px;
+		margin-top: 3rem;
+		background-image: url('/img/arrowd30_47.png');
+		background-position: center;
+		background-size: cover;
+		align-items: center;
 	}
 
 	// &__page-three {

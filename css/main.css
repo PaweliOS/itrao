@@ -244,16 +244,15 @@ body {
 .news h2 span {
   text-transform: uppercase;
 }
-.news .underline {
+.news .underline-one {
   position: relative;
   width: 380px;
-  height: 2px;
-  background-color: rgb(6, 6, 6);
-  border: transparent;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  height: 1px;
   margin-bottom: 3rem;
+  background-color: black;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .news__box {
   position: relative;
@@ -361,20 +360,23 @@ hr {
 .apps__description-left {
   position: relative;
   width: 250px;
-  height: 300px;
-  margin: 0 2rem 1rem 0;
+  height: 380px;
+  margin: 0 2rem 2rem 0;
   float: left;
-  background-color: yellow;
+  background-color: rgb(255, 255, 255);
   z-index: 1;
 }
+.apps__description-left--app-five {
+  margin: 0 2rem 6rem 0;
+}
 .apps__description-left:hover .apps__page-one {
-  -webkit-transform: translateY(300px);
-          transform: translateY(300px);
+  -webkit-transform: translateY(340px);
+          transform: translateY(340px);
 }
 .apps__page-one {
   position: absolute;
   width: 250px;
-  height: 300px;
+  height: 380px;
   padding: 2rem;
   background-color: white;
   -webkit-box-shadow: 2px 2px 8px grey;
@@ -385,10 +387,13 @@ hr {
   transition: transform 1s, -webkit-transform 1s;
   z-index: 2;
 }
+.apps__page-one--app-five {
+  height: 430px;
+}
 .apps__page-one-img {
   position: relative;
   height: 220px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   background-position: center;
   background-size: cover;
 }
@@ -397,6 +402,18 @@ hr {
 }
 .apps__page-one-img--app-two {
   background-image: url("/img/Ikona_ambus.png");
+}
+.apps__page-one-img--app-three {
+  background-image: url("/img/saferoad320.png");
+}
+.apps__page-one-img--app-four {
+  background-image: url("/img/bryly320.png");
+  height: 240px;
+  margin-bottom: 0;
+}
+.apps__page-one-img--app-five {
+  background-image: url("/img/IkonaUE_114.png");
+  margin-top: 0;
 }
 .apps__page-two {
   position: absolute;
@@ -411,11 +428,25 @@ hr {
 }
 .apps__title {
   text-align: center;
-  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 .apps__specification-table {
   margin-top: 1rem;
   list-style-type: none;
+}
+.apps__page-one-arrow-img {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 30px;
+  margin-top: 3rem;
+  background-image: url("/img/arrowd30_47.png");
+  background-position: center;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .apps__description-right {
   position: relative;
