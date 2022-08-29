@@ -373,6 +373,13 @@ hr {
           transform: translateY(340px);
 }
 .apps__page-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   width: 250px;
   height: 380px;
@@ -422,17 +429,15 @@ hr {
   list-style-type: none;
 }
 .apps__page-one-arrow-img {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  -ms-flex-item-align: center;
+      align-self: center;
   width: 20px;
   height: 30px;
   margin-top: 3rem;
-  background-image: url("/img/arrowd30_47.png");
-  background-position: center;
-  background-size: cover;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .apps__description-right {
   position: relative;

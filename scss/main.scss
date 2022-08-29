@@ -393,7 +393,10 @@ hr {
 	}
 
 	&__page-one {
+		display: flex;
+		flex-direction: column;
 		position: absolute;
+
 		width: 250px;
 		height: $apps_page_height;
 		padding: 2rem;
@@ -485,15 +488,17 @@ hr {
 	}
 
 	&__page-one-arrow-img {
-		display: inline-block;
+		display: flex;
+		// display: inline-block;
 		position: relative;
+		align-self: center;
 		width: 20px;
 		height: 30px;
 		margin-top: 3rem;
-		background-image: url('/img/arrowd30_47.png');
-		background-position: center;
-		background-size: cover;
-		align-items: center;
+		// background-image: url('/img/arrowd30_47.png');
+		// background-position: center;
+		// background-size: cover;
+		// align-items: center;
 	}
 
 	// &__page-three {
