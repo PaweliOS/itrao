@@ -394,25 +394,12 @@ hr {
   position: relative;
   height: 220px;
   margin-bottom: 2rem;
-  background-position: center;
-  background-size: cover;
 }
-.apps__page-one-img--app-one {
-  background-image: url("/img/AMB_120a.png");
-}
-.apps__page-one-img--app-two {
-  background-image: url("/img/Ikona_ambus.png");
-}
-.apps__page-one-img--app-three {
-  background-image: url("/img/saferoad320.png");
-}
-.apps__page-one-img--app-four {
-  background-image: url("/img/bryly320.png");
+.apps--app-four {
   height: 240px;
   margin-bottom: 0;
 }
-.apps__page-one-img--app-five {
-  background-image: url("/img/IkonaUE_114.png");
+.apps--app-five {
   margin-top: 0;
 }
 .apps__page-two {

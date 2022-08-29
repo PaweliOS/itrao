@@ -410,32 +410,56 @@ hr {
 
 	&__page-one-img {
 		position: relative;
-		// width: 220px;
 		height: 220px;
-		// padding: 2rem;
 		margin-bottom: 2rem;
-		background-position: center;
-		background-size: cover;
+		// background-position: center;
+		// background-size: cover;
 
-		&--app-one {
-			background-image: url('/img/AMB_120a.png');	
-		}
-		&--app-two {
-			background-image: url('/img/Ikona_ambus.png');	
-		}
-		&--app-three {
-			background-image: url('/img/saferoad320.png');	
+		// &--app-one {
+		// 	background-image: url('/img/AMB_120a.png');	
+		// }
+		// &--app-two {
+		// 	background-image: url('/img/Ikona_ambus.png');	
+		// }
+		// &--app-three {
+		// 	background-image: url('/img/saferoad320.png');	
 		}
 		&--app-four {
-			background-image: url('/img/bryly320.png');	
+			// background-image: url('/img/bryly320.png');	
 			height: 240px;
 			margin-bottom: 0;
 		}
 		&--app-five {
-			background-image: url('/img/IkonaUE_114.png');
+			// background-image: url('/img/IkonaUE_114.png');
 			margin-top: 0;
 		}
-	}
+	
+	// &__page-one-img {
+	// 	position: relative;
+	// 	height: 220px;
+	// 	margin-bottom: 2rem;
+	// 	background-position: center;
+	// 	background-size: cover;
+
+	// 	&--app-one {
+	// 		background-image: url('/img/AMB_120a.png');	
+	// 	}
+	// 	&--app-two {
+	// 		background-image: url('/img/Ikona_ambus.png');	
+	// 	}
+	// 	&--app-three {
+	// 		background-image: url('/img/saferoad320.png');	
+	// 	}
+	// 	&--app-four {
+	// 		background-image: url('/img/bryly320.png');	
+	// 		height: 240px;
+	// 		margin-bottom: 0;
+	// 	}
+	// 	&--app-five {
+	// 		background-image: url('/img/IkonaUE_114.png');
+	// 		margin-top: 0;
+	// 	}
+	// }
 
 	&__page-two {
 		position: absolute;
@@ -488,6 +512,9 @@ hr {
 		z-index: 0;
 	}
 }
+
+
+// Stara wersja
 
 // &__app-all {
 // 	padding: 5rem 1rem;
