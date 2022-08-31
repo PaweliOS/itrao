@@ -487,19 +487,22 @@ hr {
 		list-style-type: none;
 	}
 
-	&__page-one-arrow-img {
-		display: flex;
+	&__page-one-arrow {
+		// display: flex;
 		// display: inline-block;
 		position: relative;
 		align-self: center;
-		width: 20px;
-		// height: 30px;
 		margin-top: 3rem;
+		font-size: 3rem;
+		// font-weight: 300;
 		// background-image: url('/img/arrowd30_47.png');
 		// background-position: center;
 		// background-size: cover;
 		// align-items: center;
 	}
+
+
+
 
 	// &__page-three {
 	// 	position: absolute;
