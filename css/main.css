@@ -400,12 +400,18 @@ hr {
   position: relative;
   height: 220px;
   margin-bottom: 2rem;
+  background-position: center;
+  background-size: cover;
 }
-.apps--app-four {
+.apps__page-one-img--app-two {
+  background-color: yellow;
+  background-image: url("/img/saferoad320.png");
+}
+.apps__page-one-img--app-four {
   height: 240px;
   margin-bottom: 0;
 }
-.apps--app-five {
+.apps__page-one-img--app-five {
   margin-top: 0;
 }
 .apps__page-two {
