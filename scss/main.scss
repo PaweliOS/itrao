@@ -418,25 +418,24 @@ hr {
 		background-position: center;
 		background-size: cover;
 
-		// &--app-one {
-		// 	background-image: url('/img/AMB_120a.png');	
-		// }
+		&--app-one {
+			background-image: url('/img/AMB_120a.png');	
+		}
 		&--app-two {
 			// height: 40px;
-			background-color: yellow;
-			// background-image: url('/img/ambus320.png');	
-		// }
+			
+			background-image: url('/img/ambus320.png');	
+		}
 		&--app-three {
 			background-image: url('/img/saferoad320.png');	
 		}
 		&--app-four {
-			// background-image: url('/img/bryly320.png');	
+			background-image: url('/img/bryly114.jpg');	
 			height: 240px;
 			margin-bottom: 0;
 		}
 		&--app-five {
-			// background-image: url('/img/IkonaUE_114.png');
-			margin-top: 0;
+			background-image: url('/img/IkonaUE_114.png');
 		}
 	}
 	// &__page-one-img {
