@@ -233,6 +233,20 @@ body {
 	}
 }
 
+.underline__one {
+	position: relative;
+	width: 380px;
+	height: 1px;
+	margin-bottom: 3rem;
+	background-color: black;
+	left: 50%;
+	transform: translateX(-50%);
+
+	&--apps {
+		width: 160px;
+	}
+}
+
 .news {
 	position: relative;
 	width: 100%;
@@ -251,16 +265,7 @@ body {
 	}
 
 
-	
-	.underline-one {
-		position: relative;
-		width: 380px;
-		height: 1px;
-		margin-bottom: 3rem;
-		background-color: black;
-		left: 50%;
-		transform: translateX(-50%);
-	}
+
 
 	&__box {
 		position: relative;
@@ -329,6 +334,8 @@ body {
 .underline-letters {
 	text-decoration: underline;
 }
+
+
 .underline-long {
 	width: 100%;
 	height: 1px;
@@ -351,12 +358,13 @@ hr {
 	h1 {
 		font-size: 4rem;
 		font-weight: 200;
-		margin-bottom: 2rem;
+		margin-bottom: 0;
 	}
 }
 
 .apps {
 	position: relative;
+	// margin-top: 1rem;
 	// padding: 1rem;
 
 	&__panel {
@@ -419,23 +427,23 @@ hr {
 		background-size: cover;
 
 		&--app-one {
-			background-image: url('/img/AMB_120a.png');	
+			background-image: url('../img/AMB_120a.png');	
 		}
 		&--app-two {
 			// height: 40px;
 			
-			background-image: url('/img/ambus320.png');	
+			background-image: url('../img/ambus320.png');	
 		}
 		&--app-three {
-			background-image: url('/img/saferoad320.png');	
+			background-image: url('../img/saferoad320.png');	
 		}
 		&--app-four {
-			background-image: url('/img/bryly114.jpg');	
+			background-image: url('../img/bryly114.jpg');	
 			height: 240px;
 			margin-bottom: 0;
 		}
 		&--app-five {
-			background-image: url('/img/IkonaUE_114.png');
+			background-image: url('../img/IkonaUE_114.png');
 		}
 	}
 	// &__page-one-img {

@@ -230,6 +230,20 @@ body {
   font-style: italic;
 }
 
+.underline__one {
+  position: relative;
+  width: 380px;
+  height: 1px;
+  margin-bottom: 3rem;
+  background-color: black;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.underline__one--apps {
+  width: 160px;
+}
+
 .news {
   position: relative;
   width: 100%;
@@ -243,16 +257,6 @@ body {
 }
 .news h2 span {
   text-transform: uppercase;
-}
-.news .underline-one {
-  position: relative;
-  width: 380px;
-  height: 1px;
-  margin-bottom: 3rem;
-  background-color: black;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 .news__box {
   position: relative;
@@ -339,7 +343,7 @@ hr {
 .collection h1 {
   font-size: 4rem;
   font-weight: 200;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .apps {
@@ -404,21 +408,21 @@ hr {
   background-size: cover;
 }
 .apps__page-one-img--app-one {
-  background-image: url("/img/AMB_120a.png");
+  background-image: url("../img/AMB_120a.png");
 }
 .apps__page-one-img--app-two {
-  background-image: url("/img/ambus320.png");
+  background-image: url("../img/ambus320.png");
 }
 .apps__page-one-img--app-three {
-  background-image: url("/img/saferoad320.png");
+  background-image: url("../img/saferoad320.png");
 }
 .apps__page-one-img--app-four {
-  background-image: url("/img/bryly114.jpg");
+  background-image: url("../img/bryly114.jpg");
   height: 240px;
   margin-bottom: 0;
 }
 .apps__page-one-img--app-five {
-  background-image: url("/img/IkonaUE_114.png");
+  background-image: url("../img/IkonaUE_114.png");
 }
 .apps__page-two {
   position: absolute;
