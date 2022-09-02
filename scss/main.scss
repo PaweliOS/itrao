@@ -19,6 +19,7 @@ html {
 
 body {
 	// position: relative;
+
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 1.6rem;
 }
@@ -186,13 +187,25 @@ body {
 // =======================
 // index
 // =======================
+
+.main {
+	.section:nth-child(odd) {
+		background-color: rgb(252, 253, 248);
+	}
+	.section:nth-child(even) {
+	
+		background-color: rgb(231, 231, 231);
+	
+	}
+}
+
 .welcome {
 	position: relative;
 	// top: 150px;
 	width: 100%;
 	// height: 500px;
 	padding: 16rem 4rem 6rem;
-	background-color: rgb(252, 253, 248);
+	// background-color: rgb(252, 253, 248);
 	&__box {
 		// position: absolute;
 		position: relative;
@@ -203,12 +216,13 @@ body {
 		padding: 2rem;
 		box-shadow: 2px 5px 10px rgb(82, 82, 82);
 		border-radius: 8px;
+		background-color: white;
 	}
 
 	&__text {
 		position: relative;
 		font-size: 2rem;
-
+		
 		&--item1 {
 			font-size: 3.5rem;
 
@@ -217,6 +231,7 @@ body {
 			}
 		}
 		&--item2 {
+			
 			font-style: italic;
 			span {
 				left: 50px;
@@ -233,35 +248,49 @@ body {
 	}
 }
 
-.underline__one {
-	position: relative;
-	width: 380px;
-	height: 1px;
-	margin-bottom: 3rem;
-	background-color: black;
-	left: 50%;
-	transform: translateX(-50%);
 
-	&--apps {
-		width: 160px;
-	}
+
+.underline {
+
+	&__one {
+		position: relative;
+		width: 380px;
+		height: 1px;
+		margin-bottom: 3rem;
+		background-color: black;
+		left: 50%;
+		transform: translateX(-50%);
+	
+		&--apps {
+			width: 160px;
+		}
+	
+		&--help {
+			width: 110px;
+			height: 1px;
+			
+		}
+		&--contact {
+			width: 120px;
+			height: 1px;
+			
+		}
+}
 }
 
 .news {
 	position: relative;
 	width: 100%;
 	//  height: 100vh;
-	background-color: rgb(231, 231, 231);
-	padding: 1rem 4rem 4rem;
+	// background-color: rgb(231, 231, 231);
+	padding: 4rem 4rem 10rem;
 
 	h2 {
 		text-align: center;
 		font-size: 3.5rem;
 		font-weight: 300;
 
-		span {
-			text-transform: uppercase;
-		}
+
 	}
 
 
@@ -319,6 +348,34 @@ body {
 				aspect-ratio: calc(1);
 			}
 		}
+	}
+}
+
+.help {
+	position: relative;
+	width: 100%;
+	padding: 4rem 4rem 10rem;
+
+	&__title {
+		text-align: center;
+		font-size: 3.5rem;
+		font-weight: 300;
+		
+
+	}
+	&__info {
+		text-align: center;
+	}
+}
+
+.contact {
+	position: relative;
+	width: 100%;
+	padding: 4rem 4rem 10rem;
+	&__title {
+		text-align: center;
+		font-size: 3.5rem;
+		font-weight: 300;
 	}
 }
 

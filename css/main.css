@@ -191,11 +191,17 @@ body {
   font-size: 1.6rem;
 }
 
+.main .section:nth-child(odd) {
+  background-color: rgb(252, 253, 248);
+}
+.main .section:nth-child(even) {
+  background-color: rgb(231, 231, 231);
+}
+
 .welcome {
   position: relative;
   width: 100%;
   padding: 16rem 4rem 6rem;
-  background-color: rgb(252, 253, 248);
 }
 .welcome__box {
   position: relative;
@@ -204,6 +210,7 @@ body {
   -webkit-box-shadow: 2px 5px 10px rgb(82, 82, 82);
           box-shadow: 2px 5px 10px rgb(82, 82, 82);
   border-radius: 8px;
+  background-color: white;
 }
 .welcome__text {
   position: relative;
@@ -243,20 +250,24 @@ body {
 .underline__one--apps {
   width: 160px;
 }
+.underline__one--help {
+  width: 110px;
+  height: 1px;
+}
+.underline__one--contact {
+  width: 120px;
+  height: 1px;
+}
 
 .news {
   position: relative;
   width: 100%;
-  background-color: rgb(231, 231, 231);
-  padding: 1rem 4rem 4rem;
+  padding: 4rem 4rem 10rem;
 }
 .news h2 {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 300;
-}
-.news h2 span {
-  text-transform: uppercase;
 }
 .news__box {
   position: relative;
@@ -308,6 +319,31 @@ body {
 }
 .news__cards--seven img {
   aspect-ratio: 1;
+}
+
+.help {
+  position: relative;
+  width: 100%;
+  padding: 4rem 4rem 10rem;
+}
+.help__title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+.help__info {
+  text-align: center;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  padding: 4rem 4rem 10rem;
+}
+.contact__title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
 }
 
 .big-letters {
