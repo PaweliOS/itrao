@@ -1,5 +1,11 @@
 @use './animations' as *;
 
+@mixin panelNameSettings {
+	text-align: center;
+	font-size: 3.5rem;
+	font-weight: 300;
+}
+
 $apps_panel_height: 540px;
 $apps_page_height: 380px;
 $app_color: #f7f7f7;
@@ -29,6 +35,53 @@ body {
 	width: 100%;
 	max-width: 1200px;
 }
+
+.remake-box {
+	position: absolute;
+	width: 100%;
+	// height: 300px;
+	padding: 2rem;
+	transform: translateY(-105%);
+	transition: transform 2s;
+	background-color: yellow;
+	border: 3px solid black;
+	opacity: 1;
+	z-index: 20;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+
+	&__web {
+		font-size: 4rem;
+	}
+
+	&__btn {
+		// width: 100px;
+		// height: 50px;
+		padding: 1.5rem 2.1rem;
+		margin-top: 3rem;
+		font-size: 2rem;
+		border-radius: 8px;
+		cursor: pointer;
+		background-color: rgb(246, 246, 108);
+		// transition: background-color .6s;
+		transition: box-shadow 0.6s, padding 0.6s;
+		
+		box-shadow: 5px 5px 10px rgb(5, 5, 5);
+
+	}
+	&__btn:hover {
+		// background-color: rgb(244, 101, 6);
+		box-shadow: 2px 2px 4px rgb(5, 5, 5);
+
+		padding: 1.5rem 2rem;
+	}
+}
+
+.box-active {
+	transform: translateY(0);
+}
+
 
 // NAV
 .burger-btn {
@@ -193,9 +246,7 @@ body {
 		background-color: rgb(252, 253, 248);
 	}
 	.section:nth-child(even) {
-	
 		background-color: rgb(231, 231, 231);
-	
 	}
 }
 
@@ -222,7 +273,7 @@ body {
 	&__text {
 		position: relative;
 		font-size: 2rem;
-		
+
 		&--item1 {
 			font-size: 3.5rem;
 
@@ -231,7 +282,6 @@ body {
 			}
 		}
 		&--item2 {
-			
 			font-style: italic;
 			span {
 				left: 50px;
@@ -248,10 +298,7 @@ body {
 	}
 }
 
-
-
 .underline {
-
 	&__one {
 		position: relative;
 		width: 380px;
@@ -260,22 +307,20 @@ body {
 		background-color: black;
 		left: 50%;
 		transform: translateX(-50%);
-	
+
 		&--apps {
 			width: 160px;
 		}
-	
+
 		&--help {
 			width: 110px;
 			height: 1px;
-			
 		}
 		&--contact {
 			width: 120px;
 			height: 1px;
-			
 		}
-}
+	}
 }
 
 .news {
@@ -286,15 +331,8 @@ body {
 	padding: 4rem 4rem 10rem;
 
 	h2 {
-		text-align: center;
-		font-size: 3.5rem;
-		font-weight: 300;
-
-
+		@include panelNameSettings();
 	}
-
-
-
 
 	&__box {
 		position: relative;
@@ -357,14 +395,14 @@ body {
 	padding: 4rem 4rem 10rem;
 
 	&__title {
-		text-align: center;
-		font-size: 3.5rem;
-		font-weight: 300;
-		
-
+		// text-align: center;
+		// font-size: 3.5rem;
+		// font-weight: 300;
+		@include panelNameSettings();
 	}
 	&__info {
 		text-align: center;
+		font-size: 2rem;
 	}
 }
 
@@ -373,9 +411,12 @@ body {
 	width: 100%;
 	padding: 4rem 4rem 10rem;
 	&__title {
+		@include panelNameSettings();
+	}
+
+	&__info {
 		text-align: center;
-		font-size: 3.5rem;
-		font-weight: 300;
+		font-size: 2rem;
 	}
 }
 
@@ -392,7 +433,6 @@ body {
 	text-decoration: underline;
 }
 
-
 .underline-long {
 	width: 100%;
 	height: 1px;
@@ -406,7 +446,6 @@ hr {
 .update-title-compatibility {
 	margin: 2rem auto 0;
 }
-
 
 .collection {
 	padding: 18rem 0 2rem;
@@ -484,18 +523,18 @@ hr {
 		background-size: cover;
 
 		&--app-one {
-			background-image: url('../img/AMB_120a.png');	
+			background-image: url('../img/AMB_120a.png');
 		}
 		&--app-two {
 			// height: 40px;
-			
-			background-image: url('../img/ambus320.png');	
+
+			background-image: url('../img/ambus320.png');
 		}
 		&--app-three {
-			background-image: url('../img/saferoad320.png');	
+			background-image: url('../img/saferoad320.png');
 		}
 		&--app-four {
-			background-image: url('../img/bryly114.jpg');	
+			background-image: url('../img/bryly114.jpg');
 			height: 240px;
 			margin-bottom: 0;
 		}
@@ -511,16 +550,16 @@ hr {
 	// 	background-size: cover;
 
 	// 	&--app-one {
-	// 		background-image: url('/img/AMB_120a.png');	
+	// 		background-image: url('/img/AMB_120a.png');
 	// 	}
 	// 	&--app-two {
-	// 		background-image: url('/img/Ikona_ambus.png');	
+	// 		background-image: url('/img/Ikona_ambus.png');
 	// 	}
 	// 	&--app-three {
-	// 		background-image: url('/img/saferoad320.png');	
+	// 		background-image: url('/img/saferoad320.png');
 	// 	}
 	// 	&--app-four {
-	// 		background-image: url('/img/bryly320.png');	
+	// 		background-image: url('/img/bryly320.png');
 	// 		height: 240px;
 	// 		margin-bottom: 0;
 	// 	}
@@ -556,6 +595,7 @@ hr {
 	&__page-one-arrow {
 		// display: flex;
 		// display: inline-block;
+		color: black;
 		position: relative;
 		align-self: center;
 		margin-top: 3rem;
@@ -567,9 +607,6 @@ hr {
 		// align-items: center;
 	}
 
-
-
-
 	// &__page-three {
 	// 	position: absolute;
 	// 	width: 100%;
@@ -578,7 +615,6 @@ hr {
 	// 	z-index: 5;
 	// }
 
-
 	&__description-right {
 		position: relative;
 		text-align: left;
@@ -586,7 +622,6 @@ hr {
 		z-index: 0;
 	}
 }
-
 
 // Stara wersja
 
@@ -825,7 +860,6 @@ hr {
 		display: none;
 	}
 
-	
 	.welcome {
 		padding: 28rem 4rem 14rem;
 		&__text {

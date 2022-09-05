@@ -45,6 +45,52 @@ body {
   max-width: 1200px;
 }
 
+.remake-box {
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+  -webkit-transform: translateY(-105%);
+          transform: translateY(-105%);
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  background-color: yellow;
+  border: 3px solid black;
+  opacity: 1;
+  z-index: 20;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.remake-box__web {
+  font-size: 4rem;
+}
+.remake-box__btn {
+  padding: 1.5rem 2.1rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(246, 246, 108);
+  -webkit-transition: padding 0.6s, -webkit-box-shadow 0.6s;
+  transition: padding 0.6s, -webkit-box-shadow 0.6s;
+  transition: box-shadow 0.6s, padding 0.6s;
+  transition: box-shadow 0.6s, padding 0.6s, -webkit-box-shadow 0.6s;
+  -webkit-box-shadow: 5px 5px 10px rgb(5, 5, 5);
+          box-shadow: 5px 5px 10px rgb(5, 5, 5);
+}
+.remake-box__btn:hover {
+  -webkit-box-shadow: 2px 2px 4px rgb(5, 5, 5);
+          box-shadow: 2px 2px 4px rgb(5, 5, 5);
+  padding: 1.5rem 2rem;
+}
+
+.box-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -333,6 +379,7 @@ body {
 }
 .help__info {
   text-align: center;
+  font-size: 2rem;
 }
 
 .contact {
@@ -344,6 +391,10 @@ body {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 300;
+}
+.contact__info {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .big-letters {
@@ -481,6 +532,7 @@ hr {
   list-style-type: none;
 }
 .apps__page-one-arrow {
+  color: black;
   position: relative;
   -ms-flex-item-align: center;
       align-self: center;
