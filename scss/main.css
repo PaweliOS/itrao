@@ -81,7 +81,7 @@ body {
 .remake-box {
   position: absolute;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   transform: translateY(-105%);
   transition: transform 2s;
   background-color: yellow;
@@ -89,16 +89,16 @@ body {
   opacity: 1;
   z-index: 20;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .remake-box__web {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .remake-box__btn {
-  padding: 1.5rem 2.1rem;
-  margin-top: 3rem;
-  font-size: 2rem;
+  padding: 0.5rem 1.1rem;
+  margin-top: 2rem;
+  font-size: 1.6rem;
   border-radius: 8px;
   cursor: pointer;
   background-color: rgb(246, 246, 108);
@@ -111,7 +111,7 @@ body {
 }
 
 .box-active {
-  transform: translateY(0);
+  transform: translateY(90px);
 }
 
 .burger-btn {
@@ -538,7 +538,26 @@ hr {
   border-bottom: 1px solid black;
 }
 
+@media (min-width: 576px) {
+  .remake-box {
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .remake-box__web {
+    font-size: 4rem;
+  }
+  .remake-box__btn {
+    padding: 1.5rem 2.1rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    border-radius: 8px;
+  }
+}
 @media (min-width: 768px) {
+  .box-active {
+    transform: translateY(0);
+  }
   .header__hero-img {
     padding-left: 0;
   }
