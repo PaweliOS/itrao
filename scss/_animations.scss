@@ -9,3 +9,23 @@
         left: 20px;
     }
 }
+
+@keyframes moveArrow {
+    0% {
+        transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ(-30deg);
+    }
+    50% {
+        transform: rotateZ(0);
+    }
+    75% {
+        transform: rotateZ(30deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+
+    
+}
