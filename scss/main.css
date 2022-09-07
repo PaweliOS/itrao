@@ -451,9 +451,6 @@ hr {
 .apps__description-left--app-five {
   margin: 0 2rem 6rem 0;
 }
-.apps__description-left:hover .apps__page-one {
-  transform: translateY(340px);
-}
 .apps__page-one {
   display: flex;
   flex-direction: column;
@@ -493,17 +490,26 @@ hr {
 .apps__page-one-img--app-five {
   background-image: url("../img/IkonaUE_114.png");
 }
+.apps .apps__page-one-move {
+  transform: translateY(340px);
+}
 .apps__page-two {
   position: absolute;
   width: 100%;
   padding: 3rem;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -55%);
+  transform: translate(-50%, -60%);
   text-align: left;
   z-index: 1;
 }
+.apps__page-one-arrow--up {
+  display: none;
+  left: 45%;
+  transform: translateX(-50%);
+}
 .apps__title {
+  margin-top: 1rem;
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
@@ -512,15 +518,18 @@ hr {
   margin-top: 1rem;
   list-style-type: none;
 }
-.apps__page-one-arrow {
+.apps__page-arrow {
   color: black;
   position: relative;
   align-self: center;
   margin-top: 3rem;
-  font-size: 3rem;
+  border: none;
+  background: none;
   -webkit-animation: moveArrow 5s infinite;
           animation: moveArrow 5s infinite;
   transform: rotateZ(-30deg);
+  cursor: pointer;
+  font-size: 3rem;
 }
 .apps__description-right {
   position: relative;
@@ -552,6 +561,11 @@ hr {
     margin-top: 3rem;
     font-size: 2rem;
     border-radius: 8px;
+  }
+}
+@media (min-width: 644px) {
+  .apps__page-one-arrow--up {
+    display: block;
   }
 }
 @media (min-width: 768px) {

@@ -4,7 +4,6 @@ const navMobileItems = document.querySelectorAll('.nav-mobile__item');
 const remakeBox = document.querySelector('.remake-box');
 const remakeBoxBtn = document.querySelector('.remake-box__btn');
 
-
 const displayMobNav = () => {
 	navMobile.classList.toggle('nav-mobile--active');
 
@@ -15,6 +14,7 @@ const displayMobNav = () => {
 	});
 };
 
+// ====== REMAKE-BOX ==============
 const showRemakeBox = () => {
 remakeBox.classList.add('box-active')
 }
@@ -22,6 +22,7 @@ remakeBox.classList.add('box-active')
 const hideRemakeBox = () => {
 	remakeBox.classList.remove('box-active')
 }
+// =================================
 
 document.addEventListener('DOMContentLoaded',showRemakeBox)
 burgerBtn.addEventListener('click', displayMobNav);
