@@ -79,7 +79,7 @@ body {
 }
 
 .remake-box {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 1rem;
   transform: translateY(-105%);
@@ -315,7 +315,7 @@ body {
 .news {
   position: relative;
   width: 100%;
-  padding: 4rem 4rem 10rem;
+  padding: 4rem 4rem 4rem;
 }
 .news h2 {
   text-align: center;
@@ -357,6 +357,13 @@ body {
 }
 .news__cards-additional-background img {
   aspect-ratio: 1;
+}
+.news__links {
+  display: block;
+  margin: 3rem auto 0;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 .help {
