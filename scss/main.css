@@ -411,6 +411,10 @@ hr {
   margin: 2rem auto;
 }
 
+.hidding {
+  display: none;
+}
+
 .update-title-compatibility {
   margin: 2rem auto 0;
 }
@@ -444,6 +448,7 @@ hr {
   width: 250px;
   height: 380px;
   margin: 0 2rem 2rem 0;
+  padding: 0 0;
   float: left;
   background-color: rgb(255, 255, 255);
   z-index: 1;
@@ -491,22 +496,25 @@ hr {
   background-image: url("../img/IkonaUE_114.png");
 }
 .apps .apps__page-one-move {
-  transform: translateY(340px);
+  transform: translateY(360px);
 }
 .apps__page-two {
   position: absolute;
   width: 100%;
-  padding: 3rem;
+  padding: 0 3rem;
+  margin-top: 1rem;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -55%);
   text-align: left;
   z-index: 1;
 }
-.apps__page-one-arrow--up {
-  display: none;
+.apps__page-two-arrow--up {
   left: 45%;
   transform: translateX(-50%);
+}
+.apps__page-one-arrow--down {
+  margin-top: 3rem;
 }
 .apps__title {
   margin-top: 1rem;
@@ -522,7 +530,6 @@ hr {
   color: black;
   position: relative;
   align-self: center;
-  margin-top: 3rem;
   border: none;
   background: none;
   -webkit-animation: moveArrow 5s infinite;
@@ -561,11 +568,6 @@ hr {
     margin-top: 3rem;
     font-size: 2rem;
     border-radius: 8px;
-  }
-}
-@media (min-width: 644px) {
-  .apps__page-one-arrow--up {
-    display: block;
   }
 }
 @media (min-width: 768px) {

@@ -424,6 +424,9 @@ body {
 hr {
 	margin: 2rem auto;
 }
+.hidding {
+	display: none;
+}
 
 .update-title-compatibility {
 	margin: 2rem auto 0;
@@ -465,6 +468,7 @@ hr {
 		width: 250px;
 		height: $apps_page_height;
 		margin: 0 2rem 2rem 0;
+		padding: 0 0;
 		float: left;
 		background-color: rgb(255, 255, 255);
 		z-index: 1;
@@ -531,25 +535,30 @@ hr {
 	}
 
 	.apps__page-one-move {
-		transform: translateY(340px);
+		transform: translateY(360px);
 		// color: red;
 	}
 
 	&__page-two {
 		position: absolute;
 		width: 100%;
-		padding: 3rem;
+		padding: 0 3rem;
+		margin-top: 1rem;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -60%);
+		transform: translate(-50%, -55%);
 		text-align: left;
 		z-index: 1;
 	}
 
-	&__page-one-arrow--up {
-		display: none;
+	&__page-two-arrow--up {
+		// display: none;
 		left: 45%;
 		transform: translateX(-50%);
+	}
+
+	&__page-one-arrow--down {
+		margin-top: 3rem;
 	}
 
 	&__title {
@@ -569,7 +578,7 @@ hr {
 		color: black;
 		position: relative;
 		align-self: center;
-		margin-top: 3rem;
+		// margin-top: 1rem;
 		border: none;
 		background: none;
 		animation: moveArrow 5s infinite;
@@ -622,13 +631,13 @@ hr {
 	}
 }
 
-@media (min-width: 644px) {
-	.apps {
-	&__page-one-arrow--up {
-		display: block;
-	}
-}
-}
+// @media (min-width: 641px) {
+// 	.apps {
+// 	&__page-two-arrow--up {
+// 		display: block;
+// 	}
+// }
+// }
 
 
 @media (min-width: 768px) {
