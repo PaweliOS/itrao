@@ -193,6 +193,13 @@ body {
 	&--active {
 		left: 0;
 	}
+
+	&__apps {
+		height: 108px;
+	}
+
+
+
 }
 
 .header {
@@ -451,7 +458,12 @@ hr {
 		font-weight: 200;
 		margin-bottom: 0;
 	}
+
+	&__apps {
+		padding: 14rem 0 2rem;
+	}
 }
+
 
 .apps {
 	position: relative;

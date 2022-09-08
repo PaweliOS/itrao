@@ -213,6 +213,9 @@ body {
 .nav-mobile--active {
   left: 0;
 }
+.nav-mobile__apps {
+  height: 108px;
+}
 
 .header {
   position: fixed;
@@ -434,6 +437,9 @@ hr {
   font-size: 4rem;
   font-weight: 200;
   margin-bottom: 0;
+}
+.collection__apps {
+  padding: 14rem 0 2rem;
 }
 
 .apps {
