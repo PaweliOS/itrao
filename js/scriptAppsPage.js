@@ -33,16 +33,18 @@ const arrowListenerSettings = () => {
 }
 
 const checkArrowDownBtn = (e) => {
+    // podnoszę wszystkie apps__page-one
+    arrowDownBtns.forEach((btn) => {
+        btn.closest('.apps__page-one').classList.remove('apps__page-one-move')
+    })
     arrowDown = e.target.closest('button')
     arrowDown.classList.add('hidding')
     appsPageOne = e.target.closest('.apps__page-one')
     appsPageOne.classList.toggle('apps__page-one-move')
-
 }
 const checkArrowUpBtn = () => {
     appsPageOne.classList.toggle('apps__page-one-move')
     arrowDown.classList.remove('hidding')
-
 }
 
 
