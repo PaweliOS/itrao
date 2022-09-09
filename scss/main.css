@@ -54,6 +54,28 @@
     transform: rotateZ(0);
   }
 }
+@-webkit-keyframes carouselBtn {
+  0% {
+    border: 1px solid rgb(33, 33, 33);
+  }
+  50% {
+    border: 1px solid transparent;
+  }
+  100% {
+    border: 1px solid rgb(33, 33, 33);
+  }
+}
+@keyframes carouselBtn {
+  0% {
+    border: 1px solid rgb(33, 33, 33);
+  }
+  50% {
+    border: 1px solid transparent;
+  }
+  100% {
+    border: 1px solid rgb(33, 33, 33);
+  }
+}
 *,
 *::before,
 *::after {
@@ -329,6 +351,7 @@ body {
   position: relative;
   width: 100%;
   background-color: rgb(231, 231, 231);
+  margin-bottom: 1rem;
 }
 .news__cards {
   position: relative;
@@ -350,6 +373,9 @@ body {
   text-align: center;
   margin: 40px auto 10px;
 }
+.news__cards--seven {
+  margin-bottom: 4rem;
+}
 .news__cards-additional-background {
   position: relative;
   left: 50%;
@@ -363,10 +389,17 @@ body {
 }
 .news__links {
   display: block;
-  margin: 3rem auto 0;
+  width: 250px;
   text-align: center;
+  padding: 1rem;
+  color: black;
+  margin: 3rem auto 0;
+  border: 1px solid rgb(33, 33, 33);
+  border-radius: 8px;
   font-size: 2rem;
   text-decoration: none;
+  -webkit-animation: carouselBtn 2.5s infinite;
+          animation: carouselBtn 2.5s infinite;
 }
 
 .help {
@@ -439,7 +472,7 @@ hr {
   margin-bottom: 0;
 }
 .collection__apps {
-  padding: 14rem 0 2rem;
+  padding: 13rem 0 2rem;
 }
 
 .apps {
@@ -617,6 +650,26 @@ hr {
   }
   .news .underline {
     height: 4px;
+  }
+  .collection__apps {
+    padding: 18rem 0 2rem;
+  }
+  .apps__page-one-img--app-one {
+    background-image: url("../img/AMB_1024a.png");
+  }
+  .apps__page-one-img--app-two {
+    background-image: url("../img/ambus640.png");
+  }
+  .apps__page-one-img--app-three {
+    background-image: url("../img/saferoad640.png");
+  }
+  .apps__page-one-img--app-four {
+    background-image: url("../img/bryly1024.jpg");
+    height: 240px;
+    margin-bottom: 0;
+  }
+  .apps__page-one-img--app-five {
+    background-image: url("../img/IkonaUE_114.png");
   }
 }
 @media (min-width: 1200px) {

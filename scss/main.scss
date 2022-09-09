@@ -339,6 +339,7 @@ body {
 		position: relative;
 		width: 100%;
 		background-color: rgb(231, 231, 231);
+		margin-bottom: 1rem;
 	}
 	&__cards {
 		position: relative;
@@ -346,6 +347,7 @@ body {
 		// height: 330px;
 		margin: 10px 10px;
 		// padding: 10px;
+		
 		box-shadow: 3px 5px 10px black;
 		background-color: white;
 		font-size: 2rem;
@@ -363,6 +365,9 @@ body {
 			margin: 40px auto 10px;
 		}
 
+		&--seven {
+			margin-bottom: 4rem;
+		}
 
 	}
 
@@ -376,15 +381,20 @@ body {
 		img {
 			aspect-ratio: calc(1);
 		}
-
 	}
 
 	&__links {
 		display: block;
+		width: 250px;
+		text-align: center;	
+		padding: 1rem;
+		color: black;
 		margin: 3rem auto 0;
-		text-align: center;
+		border: 1px solid rgb(33, 33, 33);
+		border-radius: 8px;
 		font-size: 2rem;
 		text-decoration: none;
+		animation: carouselBtn 2.5s infinite;
 	}
 }
 
@@ -460,7 +470,7 @@ hr {
 	}
 
 	&__apps {
-		padding: 14rem 0 2rem;
+		padding: 13rem 0 2rem;
 	}
 }
 
@@ -651,15 +661,12 @@ hr {
 			border-radius: 8px;
 		}
 	}
+
+
+
 }
 
-// @media (min-width: 641px) {
-// 	.apps {
-// 	&__page-two-arrow--up {
-// 		display: block;
-// 	}
-// }
-// }
+
 
 
 @media (min-width: 768px) {
@@ -711,6 +718,37 @@ hr {
 			height: 4px;
 		}
 	}
+
+	.collection {
+		&__apps {
+			padding: 18rem 0 2rem;
+		}
+	}
+
+.apps {
+	&__page-one-img {
+		&--app-one {
+			background-image: url('../img/AMB_1024a.png');
+		}
+		&--app-two {
+			background-image: url('../img/ambus640.png');
+		}
+		&--app-three {
+			background-image: url('../img/saferoad640.png');
+		}
+		&--app-four {
+			background-image: url('../img/bryly1024.jpg');
+			height: 240px;
+			margin-bottom: 0;
+		}
+		&--app-five {
+			background-image: url('../img/IkonaUE_114.png');
+		}
+	}
+}
+
+
+
 }
 
 @media (min-width: 1200px) {
