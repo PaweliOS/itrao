@@ -3,6 +3,8 @@ const navMobile = document.querySelector('.nav-mobile');
 const navMobileItems = document.querySelectorAll('.nav-mobile__item');
 const remakeBox = document.querySelector('.remake-box');
 const remakeBoxBtn = document.querySelector('.remake-box__btn');
+const contactEmail = document.querySelector('.contact__info');
+
 
 const displayMobNav = () => {
 	navMobile.classList.toggle('nav-mobile--active');
@@ -23,6 +25,12 @@ const hideRemakeBox = () => {
 	remakeBox.classList.remove('box-active')
 }
 // =================================
+
+const fillEmail = () => {
+	contactEmail.innerHTML = '<i class="fa-regular fa-envelope"></i> '+ atob('bWlycm9ycGF3ZWwucGFiaXNpYWtAZ21haWwuY29t')
+}
+
+fillEmail();
 
 document.addEventListener('DOMContentLoaded',showRemakeBox)
 burgerBtn.addEventListener('click', displayMobNav);
