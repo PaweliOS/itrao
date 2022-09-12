@@ -295,19 +295,19 @@ body {
   position: relative;
   font-size: 2rem;
 }
-.welcome__text--item1 {
+.welcome__text--item-one {
   font-size: 3.5rem;
 }
-.welcome__text--item1 span {
+.welcome__text--item-one span {
   text-transform: capitalize;
 }
-.welcome__text--item2 {
+.welcome__text--item-two {
   font-style: italic;
 }
-.welcome__text--item2 span {
+.welcome__text--item-two span {
   left: 50px;
 }
-.welcome__text--item3 {
+.welcome__text--item-three {
   width: 90%;
   margin-top: 2rem;
   text-align: right;

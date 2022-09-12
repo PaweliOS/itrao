@@ -275,20 +275,20 @@ body {
 		position: relative;
 		font-size: 2rem;
 
-		&--item1 {
+		&--item-one {
 			font-size: 3.5rem;
 
 			span {
 				text-transform: capitalize;
 			}
 		}
-		&--item2 {
+		&--item-two {
 			font-style: italic;
 			span {
 				left: 50px;
 			}
 		}
-		&--item3 {
+		&--item-three {
 			width: 90%;
 			margin-top: 2rem;
 			text-align: right;
