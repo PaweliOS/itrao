@@ -129,7 +129,7 @@ body {
 }
 .remake-box__btn:hover {
   box-shadow: 2px 2px 4px rgb(5, 5, 5);
-  padding: 1.5rem 2rem;
+  padding: 0.5rem 1.1rem;
 }
 
 .box-active {
@@ -614,6 +614,10 @@ hr {
     margin-top: 3rem;
     font-size: 2rem;
     border-radius: 8px;
+  }
+  .remake-box__btn:hover {
+    box-shadow: 2px 2px 4px rgb(5, 5, 5);
+    padding: 1.5rem 2.1rem;
   }
 }
 @media (min-width: 768px) {
